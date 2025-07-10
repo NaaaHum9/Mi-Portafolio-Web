@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* 
+* Header
+*/
+header{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background: #f0f0f0;
+    overflow-x: auto;
+    background-color: #ccc;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+button{
+    padding: 8px 16px;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-weight: bold;
+}
+
+/*
+* Main - Home
+*/
+#art-home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 20px;
+    gap: 40px;
+}
+
+#div-info-home{
+    flex: 1;
+    max-width: 50%;
+}
+
+#div-pic-home{
+    flex: 1;
+    max-width: 100%;
+
+}
+
+#div-pic-home img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: conver;
+}
+
+/*
+* Main - About
+*/
+
+#div-info-home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: large;
+}
+
+#div-pic-home{
+    padding-right: 1rem;
+}
+
+#art-about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 20px;
+    gap: 40px;
+    background-color: #ccc;
+}
+
+#div-info-about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: large;
+    padding-right: 1rem;
+    text-align: justify;
+}
+
+#div-info-about{
+    flex: 1;
+    max-width: 50%;
+}
+
+#div-pic-about{
+    flex: 1;
+    max-width: 100%;
+
+}
+
+#div-pic-about img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/*
+* Main - Proyectos
+*/
+
+#art-works{
+    padding-top: 1.5rem;
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+}
+
+#btns-works{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 150px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#btns-works button{
+    font-size: medium;
+    border: 1px solid black;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.mostrar-proyectos{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.project-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+
+
+/*
+* Main - contactos
+*/
+
+.links-contacts{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 100px;
+    padding-top: 50px;
+    padding-bottom: 150px;
+    
+}
+
+#art-contacts{
+    padding-top: 1.5rem;
+    background-color: #ccc;
+}
+
+
+.project-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.project-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+/*
+    Media querrys
+*/
+
+/* Header */
+@media (max-width:1000px){
+    header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav{
+        width: 100%;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+
+    button{
+        flex: 1 1 auto;
+    }
+}
+
+/* main - home*/
+@media (max-width:1000px) {
+    #art-home{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #div-info-home, #div-pic-home{
+        max-width: 100%;
+    }
+    
+    #div-pic-home{
+        max-height: 300px;
+        width: auto;
+    }
+}
+
+/* main - about*/
+@media (max-width:1000px) {
+    #art-about{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #div-info-about, #div-pic-home{
+        max-width: 100%;
+    }
+    
+    #div-pic-about{
+        max-height: 300px;
+        width: auto;
+    }
+}
